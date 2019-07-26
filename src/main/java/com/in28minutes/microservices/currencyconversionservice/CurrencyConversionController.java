@@ -2,7 +2,6 @@ package com.in28minutes.microservices.currencyconversionservice;
 
 import com.in28minutes.microservices.currencyconversionservice.bean.CurrencyConversionBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -14,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@EnableFeignClients("com.in28minutes.microservices.currencyconversionservice")
+
 public class CurrencyConversionController {
 
     @Autowired
